@@ -1,0 +1,41 @@
+﻿.containerAbout {
+    margin-top:50px;
+}
+
+.horizontal{
+    display: block;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.float-left {
+    display: block;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    float: left;
+    width: 50%;    
+}
+
+.float-right {
+    display: block;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    float: left;
+    width: 50%;    
+}
+
+.center {
+    width: 100%;
+    display: inline-block;
+}
+
+.paragraph {
+    color: #00aff0;
+    font-size:medium;
+}
+    
+.float-left p, .float-right p{
+    font-size:15px!important;    
+}

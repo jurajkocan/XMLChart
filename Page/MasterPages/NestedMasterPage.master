@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Page/MasterPages/MasterPage.Master" AutoEventWireup="false" CodeBehind="NestedMasterPage.master.cs" Inherits="WebApplication2.Page.MasterPages.NestedMasterPage" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="contentHead" runat="server">
+    <asp:ContentPlaceHolder ID="contentHead" runat="server">                
+        <%-- placeholder: head --%>
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="contentMain" runat="server">    
+    <%-- section: navigation--%>                        
+    <asp:ContentPlaceHolder ID="contentMain" runat="server">                
+        <%-- placeholder: body --%>
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="contentScripts" runat="server">        
+    <asp:ContentPlaceHolder ID="contentScripts" runat="server">
+        <%-- placeholder: scripts --%>
+    </asp:ContentPlaceHolder>
+</asp:Content>

@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="WebApplication2.Page.MasterPages.MasterPage"   %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Web Application</title>    
+
+    <asp:ContentPlaceHolder ID="contentHead" runat="server">
+        <%-- placeholder: head --%>
+    </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" type="text/css" href="../../Scripts/Static_Content/css/page_shared.css" />    
+    <link rel="stylesheet" type="text/css" href="../../Scripts/Static_Content/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../Scripts/Static_Content/css/iconFont.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../Scripts/Static_Content/css/metro-bootstrap.css" />        
+
+</head>
+
+<body class="metro" >            
+    <form id="form1" runat="server">                    
+        <component:Navigation runat="server"></component:Navigation>
+        
+            <asp:ContentPlaceHolder ID="contentMain" runat="server">
+                <%-- placeholder: content --%>
+            </asp:ContentPlaceHolder>
+        
+        <component:Footer runat="server"></component:Footer>
+        <!-- content: Scripts -->
+        
+        <script type="text/javascript" src="../../Scripts/Static_Content/js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="../../Scripts/Static_Content/js/jquery-ui-1.9.2.min.js"></script>
+
+        <script type="text/javascript" src="../../Scripts/Static_Content/js/component/metro-scroll.js"></script>
+        <script type="text/javascript" src="../../Scripts/Static_Content/js/component/metro-dropdown.js"></script>
+        <script type="text/javascript" src="../../Scripts/Static_Content/js/jquery.ddslick.js"></script>
+
+        <asp:ContentPlaceHolder ID="contentScripts" runat="server">
+            <%-- placeholder: scripts--%>
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
+
